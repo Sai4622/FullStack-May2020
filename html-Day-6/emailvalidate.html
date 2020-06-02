@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Validate email</title>
+    <script>
+        function validateemail(){
+            var v1=document.getElementById("txttext").value;
+            if(/^[a-zA-Z0-9._-]{6,12}[@][a-z]{3,15}[.]{2,6}$/.test(v1))
+            {
+                window.alert("Valid");
+            }
+            else
+            {
+                window.alert("Invalid");
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <input type="text" id="txttext"><br>
+        <button type="button" onclick="validateemail()">Check</button>
+    </body>
+</html>
