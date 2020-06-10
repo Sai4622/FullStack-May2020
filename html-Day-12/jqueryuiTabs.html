@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accrodin Example 2</title>
+        <link rel="StyleSheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+           $(document).ready(function(){
+               $('#div1').tabs();
+               $("#txtdate").datepicker();
+           });
+        </script>
+        <style>
+            a1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <ul>
+                <li><a href="#signin">Signin</a></li>
+                <li><a href="#signup">Signup</a></li>
+            </ul>
+            <div id="signin">
+                <p>Please Sigin into you Account</p>
+            </div>
+            <div id="signup">
+                <p>Registar a new Account </p>
+            </div>
+        </div><br><br>
+        <div class="a1"> 
+            <label for="date">Date picker :</label>
+            <input type="text" id="txtdate">
+        </div>
+    </body>
+</html>
