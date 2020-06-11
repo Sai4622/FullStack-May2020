@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#btnbutton').click(function(){
+                    var val1 = $('#txtname').val();
+                    var val2 = $('#txtpassword').val();
+                    if(val1 == '' && val2 == ''){
+                        $('input[type="text"]').css('border','2px solid red');
+                        window.alert("Fill the Username and Password")
+                    }
+                    else{
+                        if(val1 =='admin'&& val2=='admin'){
+                            $('input[type="text"]').css('border','2px solid Green');
+                            window.alert("Succefully login")
+                        }
+                        else{
+                            $('input[type="text"]').css('border','2px solid red');
+                            window.alert("Not a User")
+                        }
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="username">UserName</label>
+                    <input type="text" class="form-control" id="txtname" placeholder="Enter User Name">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control" id="txtpassword" placeholder="Enter password">
+                </div>
+                
+                <button type="button" id="btnbutton"> Login</button>
+            </form>
+        </div>
+    </body>
+</html>

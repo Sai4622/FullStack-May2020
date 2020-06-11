@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#btnAddcss').click(function(){
+                    $('#div1').css("background-color","ligthgreen")
+                });
+                $('#btnAddcss').click(function(){
+                   $('div1').css()({
+                       
+                   });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+            <p>Application Working Status</p>
+        </div>
+        <div>
+            <button type="button" id="btnAddcss">AddCss</button>
+            <button type="button" id="btnAddcss1">AddMultiplyCss</button>
+        </div>
+    </body>
+</html>
