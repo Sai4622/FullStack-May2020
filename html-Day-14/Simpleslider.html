@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample Slider</title>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    slideMargin:0,
+                    auto: true,
+                    autoControls: true,
+                    stopAutoOnClick: true,
+                    pager: true,
+                    slideWidth: 1800,
+                    slideheigth:10
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <div class="slider">
+            <div> <img src="images/pic-1.jpg">Images 1</div>
+            <div><img src="images/pic-2.jpg">Images 2</div>
+            <div><img src="images/pic-3.jpg">Image 3</div>
+            <div><img src="images/pic-4.jpg">Images 4</div>
+        </div>
+    </body>
+</html>
